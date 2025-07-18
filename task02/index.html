@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 02</title>
+</head>
+<body style="margin: 30px;">
+    <!--<iframe src="../header.html" style="width: 100%; height: 60px; border: none;"></iframe>-->
+     
+    <table style="width: 100%; border-collapse: collapse; background-color: rgb(244, 245, 249);">
+        <!-- nav buttons -->
+        <tr>
+            <td colspan="3" style="text-align: right; padding: 10px;">
+                <a href="../index.html" style="border-radius: 5px; color: black; text-decoration: none; padding: 2px; border: 1px solid; background-color: whitesmoke;">Home</a>
+                <a href="../task01/index.html" style="border-radius: 5px; color: black; text-decoration: none; padding: 2px; border: 1px solid; background-color: whitesmoke;">Task 01</a>
+                <a href="../task02/index.html" style="border-radius: 5px; color: black; text-decoration: none; padding: 2px; border: 1px solid; background-color: whitesmoke;">Task 02</a>
+            </td>
+        </tr>
+
+        <!-- welcome txt and image -->
+        <tr style="height: 250px;">
+            <!-- just a space to take the same width of the image to put the text in exactly center-->
+            <td style="width: 290px; padding-right: 20px;"></td>
+
+            <!-- text -->
+            <td style="width: 100%;">
+                <h3 style="text-align: center;">WELCOME TO OUR FIRST WEBSITE</h1>
+                <p style="text-align: center; font-size: 8;">We have greate offer with big discount available for a temporary period.</p>
+            </td>
+
+            <!-- image -->
+            <td style="width: 200px; padding-right: 20px;">
+                <img src="images/watch.png" alt="Task 02 Image" style="width: 200px; height: 200px;" loading="lazy" />
+            </td>
+        </tr>
+
+        <!-- extra space to table bottom-->
+        <tr>
+            <td colspan="3" style="text-align: right; padding: 40px;"></td>
+        </tr>
+    </table>
+
+    <!-- about us -->
+     <div style="align-content: center; text-align: center;">
+         <h2 >About Us</h2>
+    </div>
+
+    <div style="margin-top: 5px; display: flex; width: 100vw;">   
+        <div style="width: 50%; margin: auto;">
+            <p><b>Any title:</b></p>
+            <p>We are a team of passionate individuals dedicated to providing the best products and services to our customers. Our mission is to deliver quality and value in everything we do.</p>
+            <p>With years of experience in the industry, we strive to exceed expectations and create lasting relationships with our clients. Your satisfaction is our top priority, and we are here to assist you every step of the way.</p>
+            <p>Thank you for choosing us!</p>
+        </div>
+
+        <div style="width: 50%;">
+            <!--<img src="images/desk.png" alt="desk" style="width: 100px; height: 100px; margin-top: 20px;" loading="lazy" />-->
+            <img src="images/desk.png" alt="desk" height="400px" loading="lazy" />
+        </div>
+    </div>
+
+    <!-- galley -->
+     <div style="align-content: center; text-align: center; margin-top: 20px;">
+         <h2 >GALLERY</h2>
+    </div>
+
+    <div style="margin-top: 5px; display: flex; width: 100vw; height: 400px; text-align: center; background-color: white;">   
+        <div style="width: 33%;  margin-left: 8px; margin-right: 8px; background-color: blue;">
+            <img src="images/cam.png" alt="camera" height="100%" width="100%"  loading="lazy" />
+        </div>
+
+        <div style="width: 33%; margin-left: 8px; margin-right: 8px; background-color: yellow;">
+            <img src="images/perfume.png" alt="perfume" height="100%" width="100%" loading="lazy" />
+        </div>
+
+        <div style="width: 33%; margin-left: 8px; margin-right: 8px; background-color: black;">
+            <img src="images/hand-watch.png" alt="hand-watch" height="100%" width="100%"  loading="lazy" />
+        </div>
+    </div>
+
+    <!-- contact us -->
+     <div style="align-content: center; text-align: center;">
+         <h2 >CONTACT US</h2>
+    </div>
+
+    <!-- <form action="https://formspree.io/f/xjvowzqk" method="POST" style="width: 50%; margin: auto; margin-top: 20px;"> -->
+    <form action="" method="GET">
+        <fieldset style="border: 1; padding: 20;">
+            <legend style="font-size: 1.2em; font-weight: bold;">Send Us a Message</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Your name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Your email"><br><br>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="eg">Egypt</option>
+                <option value="ksa">K.S.A.</option>
+                <option value="qtr">Qatar</option>
+            </select><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+
+            <label >What do suggest for out shop?</label><br>
+
+            <input type="checkbox" id="mobile" name="mobile" value="mobile">
+            <label for="mobile">Mobile</label><br>
+            
+            <input type="checkbox" id="labtop" name="labtop" value="labtop">
+            <label for="labtop">Labtops</label><br>
+
+            <input type="checkbox" id="camera" name="camera" value="camera">
+            <label for="camera">Cameras</label>
+            <br><br>
+
+            <label >you loved our shop?</label><br>
+            <input type="radio" id="yes" name="is_love_shop" value="yes">
+            <label for="yes">Yes</label><br>
+
+            <input type="radio" id="no" name="is_love_shop" value="no">
+            <label for="no">No</label><br><br>
+
+
+            <button type="submit" style="padding: 10px; background-color: blue; color: white; border: none; border-radius: 5px;">Send</button>
+            <button type="reset" style="padding: 10px; background-color: red; color: white; border: none; border-radius: 5px;">Reset</button>
+
+        </fieldset>
+    </form>
+
+    <div id="data" style="margin-top: 20px; padding: 20px;"> </div>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const data = new FormData(event.target);
+            const output = document.getElementById('data');
+            output.innerHTML = `<h3>Form Data Submitted:</h3><pre>${JSON.stringify(Object.fromEntries(data), null, 2)}</pre>`;
+        });
+    </script>
+</body>
+</html>

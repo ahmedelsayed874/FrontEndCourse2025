@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(35, 26, 67);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.types {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(242, 245, 245, 0.1);
+    border-radius: 100px;
+    /* background-color: wheat; */
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 0.75em;
+    cursor: pointer;
+    border-radius: 100px;
+
+    &:active {
+        background-color: transparent;
+    }
+}
+
+#time {
+    border: 6px solid rgb(235, 110, 133);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+    background-color: rgba(242, 245, 245, 0.07);
+    margin: 0;
+    /* cursor: default; */
+    cursor: pointer;
+}
+
+#timer-status {
+    margin-top: 05px;
+    color: rgba(255, 255, 255, 0.565);
+    font-size: 0.8em;
+}

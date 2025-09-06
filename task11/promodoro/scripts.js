@@ -106,4 +106,3 @@ function toggleTimerStatus() {
 // Initialize the application
 initialize();
 
-

@@ -181,3 +181,9 @@ document.getElementById("generate").addEventListener("click", function () {
     
     document.getElementById("password").value = password;
 });
+
+function copyPassword() {
+    let value = document.getElementById('password').value;
+    navigator.clipboard.writeText(value);
+    alert('Password coppied (' + value + ')');
+}

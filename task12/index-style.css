@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  background-color: #fdfdfd;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background-color: #f0eeeef1; */
+  background: linear-gradient(90deg, #6b9ef7 0%, #f0eeeef1 100%);
+  color: white;
+  padding: 10px;
+  
+  font-size: 20px;
+  font-weight: bold;
+  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(111, 110, 110);
+  /* font-weight: bold; */
+  transition: 200ms ease-in-out;
+
+  &:hover {
+    color: black;
+    transform: scale(1.1);
+  }
+}
+
+main {
+  /* background-color: green; */
+  width: 70%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+}
+
+.title {
+  /* text-align: center; */
+  margin: 20px 0;
+  font-size: 50px;
+  font-weight: bold;
+  color: #333;
+}
+
+.cart {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  font-weight: bold;
+
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+.cart:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  /* transform: scale(1.02); */
+}
+
+.cart p {
+  width: 20%;
+  padding-right: 5px;
+  /* background-color: lightgray; */
+}
+
+/* please answer me: why this properties doesn't override (.cart p) properties ... 01022663988 */
+.cart-icon {
+  width: 24px !important;
+  /* background-color: red; */
+}
+
+.cart-id {
+  color: rgb(123, 121, 121);
+}
+
+.mony {
+  color: green;
+}
+
+.discount {
+  color: red;
+}
+
+.products {
+  color: blue;
+}
+
+@media (max-width: 800px) {
+  main {
+    width: 90%;
+  }
+  .cart {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .cart p {
+    width: 30%;
+    font-size: 13px;
+  }
+}

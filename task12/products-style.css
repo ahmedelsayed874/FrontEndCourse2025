@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  background-color: #fdfdfd;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background-color: #f0eeeef1; */
+  background: linear-gradient(90deg, #6b9ef7 0%, #f0eeeef1 100%);
+  color: white;
+  padding: 10px;
+  
+  font-size: 20px;
+  font-weight: bold;
+  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(111, 110, 110);
+  /* font-weight: bold; */
+  transition: 200ms ease-in-out;
+
+  &:hover {
+    color: black;
+    transform: scale(1.1);
+  }
+}
+
+main {
+  /* background-color: green; */
+  width: 70%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+}
+
+.cart-summary {
+  font-weight: bold;
+  border: 2px solid #6b9ef7;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 50px;
+  color: rgb(113, 114, 114);
+}
+
+.cart-summary-cols {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+#cart-id {
+  color: black;
+}
+
+#cart-total {
+  color: green !important;  
+}
+
+#cart-discount {
+  color: red !important;  
+} 
+
+#cart-products-count {
+  color: black;
+}
+
+#cart-total-quantity {
+  color: black;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.product-quantity span {
+  font-size: 10px;
+}
+
+.product-price .price {
+  font-weight: bold;
+  color: green;
+  font-size: 16px;
+}
+
+.product-total .total {
+  font-weight: bold;
+  color: blue;
+  /* font-size: 16px; */
+}
+
+.product-discount .discount {
+  font-weight: bold;
+  color: red;
+  /* font-size: 14px; */
+} 
+
+.product-discount .discount-percent {
+  font-style: italic;
+  color: darkred;
+}

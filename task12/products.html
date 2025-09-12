@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task12: Carts</title>
+    <link rel="stylesheet" href="products-style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <p><a class="logo" href="#">LOGO</a></p>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <main>
+            <div class="cart-summary">
+                <p>Cart ID: <span id="cart-id">0</span></p>
+
+                <div class="cart-summary-cols">
+                    <!-- col-1 -->
+                     <div class="cart-summary-col">
+                        <p>Total: <span id="cart-total">0 $</span></p>
+                        <p>Products Count: <span id="cart-products-count">0</span></p>
+                     </div>
+                    
+                     <!-- col-2 -->
+                     <div class="cart-summary-col">
+                        <p>Discount: <span id="cart-discount">0 $</span></p>
+                        <p>Total Quantity: <span id="cart-total-quantity">0</span></p>
+                     </div>
+                </div>
+            </div>
+
+            <div class="products-container">
+                <!-- Products will be dynamically inserted here -->
+
+                 <!-- <div style="background-color: black; margin-left:10px; margin-bottom:10px; width:200px; height:200px;">1</div>
+                 <div style="background-color: black; margin-left:10px; margin-bottom:10px; width:200px; height:200px;">2</div>
+                 <div style="background-color: black; margin-left:10px; margin-bottom:10px; width:200px; height:200px;">3</div>
+                 <div style="background-color: black; margin-left:10px; margin-bottom:10px; width:200px; height:200px;">4</div>
+                 <div style="background-color: black; margin-left:10px; margin-bottom:10px; width:200px; height:200px;">5</div>
+                 <div style="background-color: black; margin-left:10px; margin-bottom:10px; width:200px; height:200px;">6</div>
+                 <div style="background-color: black; margin-left:10px; margin-bottom:10px; width:200px; height:200px;">7</div>
+                 <div style="background-color: black; margin-left:10px; margin-bottom:10px; width:200px; height:200px;">8</div>
+                 <div style="background-color: black; margin-left:10px; margin-bottom:10px; width:200px; height:200px;">9</div>
+                 <div style="background-color: black; margin-left:10px; margin-bottom:10px; width:200px; height:200px;">10</div>
+                 <div style="background-color: black; margin-left:10px; margin-bottom:10px; width:200px; height:200px;">11</div>
+                 <div style="background-color: black; margin-left:10px; margin-bottom:10px; width:200px; height:200px;">12</div>
+                 <div style="background-color: black; margin-left:10px; margin-bottom:10px; width:200px; height:200px;">13</div>
+                 <div style="background-color: black; margin-left:10px; margin-bottom:10px; width:200px; height:200px;">14</div>
+                 <div style="background-color: black; margin-left:10px; margin-bottom:10px; width:200px; height:200px;">15</div>
+                 <div style="background-color: black; margin-left:10px; margin-bottom:10px; width:200px; height:200px;">16</div>
+                 <div style="background-color: black; margin-left:10px; margin-bottom:10px; width:200px; height:200px;">17</div>
+                 <div style="background-color: black; margin-left:10px; margin-bottom:10px; width:200px; height:200px;">18</div>
+                 <div style="background-color: black; margin-left:10px; margin-bottom:10px; width:200px; height:200px;">19</div>
+                 <div style="background-color: black; margin-left:10px; margin-bottom:10px; width:200px; height:200px;">20</div> -->
+            </div>
+        </main>
+    </section>
+
+    <footer></footer>
+    
+    <script src="products-scripts.js"></script>
+</body>
+</html>
